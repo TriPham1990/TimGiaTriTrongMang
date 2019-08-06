@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tìm giá trị trong mảng</title>
+</head>
+<body>
+<script>
+    let value = prompt("Enter a number: ");
+    value = parseInt(value);
+    let x = [-3, 5, 1, 3, 2, 10];
+    let check = false;
+    while (check === false) {
+        for (var i = 0; i < x.length; i++) {
+            if (value === x[i]) {
+                check = true;
+                break;
+            }
+        }
+        if (check) {
+            document.write("Vị trí của" + value + " là " + " x[" + i + "]");
+
+        } else {
+            value = parseInt(prompt("Enter the number: "));
+        }
+    }
+</script>
+</body>
+</html>
